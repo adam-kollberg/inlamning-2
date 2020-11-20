@@ -4,9 +4,6 @@
 //Array of inputs
 var valueList = [];
 
-
-
-
 //function count budget
 function countBudget(e) {
 e.preventDefault()
@@ -21,6 +18,9 @@ if (options.value === "+")
 //chooze the value of description and number
 var description = document.querySelector("#description").value;
 var value = document.querySelector("#value").value;
+
+//push the value and convert to number
+valueList.push( Number(value)    );
 
 // create li element and append them in the ul tag
     var li = document.createElement ("li");
@@ -39,6 +39,11 @@ var value = document.querySelector("#value").value;
 
 else if (options.value === "-") {
 
+//chooze the value of description and number
+var description = document.querySelector("#description").value;
+var value = document.querySelector("#value").value;
+valueList.push( Number(-value)    );
+
     var li = document.createElement ("li");
 
     var ul = document.querySelector(".expenseList");
@@ -54,9 +59,13 @@ var summary = 0
 for ( var i=0; i<valueList.length; i++) {
      summary += valueList[i];
 }
-var totalSum = document.querySelector("totalData");
+var totalSum = document.querySelector(".totalData");
+totalSum.innerText = summary;
 
 }
+
+
+
 
 var btn_add = document.querySelector(".add");
 
