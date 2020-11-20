@@ -50,6 +50,12 @@ else if (options.value === "-") {
 
 }
 
+var summary = 0
+for ( var i=0; i<valueList.length; i++) {
+     summary += valueList[i];
+}
+var totalSum = document.querySelector("totalData");
+
 }
 
 var btn_add = document.querySelector(".add");
