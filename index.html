@@ -1,19 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inlämning-2</title>
-    <link rel="stylesheet" href="css/style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Budget app</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="app.js" defer></script>
 </head>
 <body>
     
+<!-- Inkomst/kostnad  -->
+
+<div class="wrapper">
+
+<div class="income">
+<h2>Inkomst : </h2>
+<span class="incomeData">
+
+
+</span>
+
+</div>
+
+
+<div class="expense">
+    <h2>Kostnad : </h2>
+    <span class="expenseData">
+
+    
+    </span>
+
+</div>
+
+
+<!-- Vinst  -->
+
+<div class="total">
+    <h2>Totalt kvar : </h2>
+    <span class="totalData"></span>
+
+</div>
 
 
 
+
+
+
+<form>
+<!-- Select  -->
+<select name="" id="selectOption">
+    <option value="+">+</option>
+    <option value="-">-</option>
+</select>
+
+
+
+
+
+<!-- input/add-button  -->
+
+<input type="text"  id="description">
+<input type="number" id="value">
+
+<button class="add">Add</button>
+</form>
+
+
+
+
+
+
+<!-- Inkomstlista  -->
+
+<div class="incomeList_wrapper">
+    <h2>Inkomstlista</h2>
+    <ul class = "incomeList">
+
+    </ul>
 
 
     
-<script src="app.js"></script>
+</div>
+
+
+<!-- Kostnadlista  -->
+
+<div class="expenseList_wrappper">
+    <h2>Kostnadslista</h2>
+
+    <ul class = "expenseList">
+
+    </ul>
+
+
+    
+</div>
+
+
+
+<button class="clear">rensa</button>
+
+
+</div>
+
+
 </body>
 </html>
