@@ -4,39 +4,58 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Budget app</title>
- <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css">
  <script src="app.js" defer></script>
 </head>
 <body>
+
+
+<div class="container">
+    <div class="header-budgetApp">
+<h1>RÄKNA UT DIN MÅNADSBUDGET</h1>
+
+    </div>
+<div class="first_section">
+    <form>
+
+        <h2>Välj dina värden</h2>
+    <!-- Select  -->
+    <label for="select">Välj intäkter eller kostnader</label>
+    <select name="" id="selectOption">
+        <option value="select">Välj..</option>
+        <option value="+">Intäkter</option>
+        <option value="-">Kostnader</option>
+    </select>
+    
+    
+    <!-- inputs/add-button  -->
+    
+    <label for="description">Beskrivning</label>
+    <input type="text"  id="description" placeholder="Beskrvning">
+    <label for="value">Värde</label>
+    <input type="number" id="value" placeholder="Värde">
+    
+    <button class="add">Lägg till</button>
+    <button class="clear">Rensa</button>
+    </form>
     
 <!-- Total after income and expense  -->
 
-<div class="total">
+
+    <div class="total">
     <h2>Totalt kvar : </h2>
     <span class="totalData"></span>
 
 </div>
-
+</div>
 <!-- Form select Remember preventDefault  -->
-<form>
-<!-- Select  -->
-<select name="" id="selectOption">
-    <option value="+">+</option>
-    <option value="-">-</option>
-</select>
 
-
-<!-- inputs/add-button  -->
-
-<input type="text"  id="description">
-<input type="number" id="value">
-
-<button class="add">Add</button>
-</form>
 
 
 <!-- income list  -->
-
+<div class="wrapperList">
 <div class="incomeList_wrapper">
     <h2>Inkomstlista</h2>
     <ul class = "incomeList">
@@ -50,7 +69,7 @@
 
 <!-- expenselist  -->
 
-<div class="expenseList_wrappper">
+<div class="expenseList_wrapper">
     <h2>Kostnadslista</h2>
 
     <ul class = "expenseList">
@@ -61,12 +80,17 @@
     
 </div>
 
+</div>
 
 
-<button class="clear">rensa</button>
+
 
 
 </div>
+
+
+
+
 
 
 </body>

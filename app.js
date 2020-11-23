@@ -33,6 +33,8 @@ valueList.push( Number(value)    );
 
     
 
+    
+
 
 }
 
@@ -66,7 +68,16 @@ totalSum.innerText = summary;
 
 
 
+function reload() {
+location.reload();
+}
+
 
 var btn_add = document.querySelector(".add");
 
 btn_add.addEventListener("click", countBudget);
+
+
+var btn_clear = document.querySelector(".clear");
+
+btn_clear.addEventListener("click", reload);

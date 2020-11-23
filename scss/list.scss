@@ -1,0 +1,78 @@
+.wrapperList {
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-top: 3rem;
+
+
+.incomeList_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #D5DADE;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 1.5rem;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    li {
+        list-style-type: none;
+        margin: 10;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #9BB97E;
+        color: white;
+    }
+
+    
+}
+
+.expenseList_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: #F2E085;
+    justify-content: center;
+    padding-top: 2rem;
+    margin: 1.5rem;
+    padding-bottom: 2rem;
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+    li {
+        list-style-type: none;
+        margin: 10px;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D9AB82;
+        color: white;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+}
