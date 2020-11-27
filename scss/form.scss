@@ -2,12 +2,16 @@ form {
 display: flex;
 flex-direction: column;
 align-items: center;
-align-content: space-between;
-justify-content: space-evenly;
 background-color: #EEE2D7;
 width: 50vw;
 padding-top: 2rem;
 padding-bottom: 2rem;
+
+
+@media screen and (max-width: 812px) {
+    width: 100%;
+    
+  }
 
 
 
@@ -23,8 +27,6 @@ select {
     border-radius: 30px;
     border-color: white;
     
-
-
  
     
 }

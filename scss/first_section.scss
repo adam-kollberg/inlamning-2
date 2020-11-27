@@ -2,6 +2,14 @@
     display: flex;
     flex-direction: row;
 
+    @media screen and (max-width: 812px) {
+        flex-direction: column;
+
+      }
+
+
+
+
 }
 
 .total {
@@ -14,5 +22,13 @@ background-color: #9BB97E;
 color: white;
 font-size: 2.5rem;
 width: 50vw;
+
+
+@media screen and (max-width: 812px) {
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+  }
 
 }

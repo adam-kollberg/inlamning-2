@@ -2,12 +2,13 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: space-between;
-  justify-content: space-evenly;
   background-color: #EEE2D7;
   width: 50vw;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  @media screen and (max-width: 812px) {
+    form {
+      width: 100%; } }
   form h2 {
     padding-bottom: 2rem; }
   form select {
@@ -45,6 +46,9 @@ form {
 .first_section {
   display: flex;
   flex-direction: row; }
+  @media screen and (max-width: 812px) {
+    .first_section {
+      flex-direction: column; } }
 
 .total {
   display: flex;
@@ -56,12 +60,20 @@ form {
   color: white;
   font-size: 2.5rem;
   width: 50vw; }
+  @media screen and (max-width: 812px) {
+    .total {
+      width: 100%;
+      padding-top: 2rem;
+      padding-bottom: 2rem; } }
 
 .wrapperList {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 3rem; }
+  @media screen and (max-width: 812px) {
+    .wrapperList {
+      padding-top: 1rem; } }
   .wrapperList .incomeList_wrapper {
     display: flex;
     flex-direction: column;
@@ -72,6 +84,9 @@ form {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 1.5rem; }
+    @media screen and (max-width: 812px) {
+      .wrapperList .incomeList_wrapper {
+        margin: 0.2rem; } }
     .wrapperList .incomeList_wrapper ul {
       display: flex;
       justify-content: center;
@@ -95,6 +110,9 @@ form {
     padding-top: 2rem;
     margin: 1.5rem;
     padding-bottom: 2rem; }
+    @media screen and (max-width: 812px) {
+      .wrapperList .expenseList_wrapper {
+        margin: 0.2rem; } }
     .wrapperList .expenseList_wrapper ul {
       display: flex;
       justify-content: center;
